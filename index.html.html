@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Syntax.AI - AI Video Prompts and Generators</title>
+
+<style>
+
+    body {
+        margin: 0;
+        padding: 30px;
+        background: #0b0b0b;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 38px;
+        margin-bottom: 40px;
+    }
+
+    .card {
+        background: #171717;
+        border-radius: 18px;
+        padding: 25px;
+        margin-bottom: 35px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-top: 0;
+    }
+
+    .car-image {
+        width: 100%;
+        max-width: 500px;
+        height: 280px;
+        object-fit: cover;
+        display: block;
+        margin: 20px auto 10px;
+        border-radius: 15px;
+    }
+
+    .download-btn,
+    .copy-btn {
+        display: block;
+        margin: 10px auto 25px;
+        padding: 12px 22px;
+        border: none;
+        border-radius: 10px;
+        background: white;
+        color: #111;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .download-btn:hover,
+    .copy-btn:hover {
+        transform: scale(1.04);
+        background: #dddddd;
+    }
+
+    .label {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    .prompt {
+        background: #090909;
+        border: 1px solid #333;
+        padding: 20px;
+        border-radius: 12px;
+        line-height: 1.7;
+        font-size: 16px;
+    }
+
+</style>
+```
+
+</head>
+
+<body>
+
+<div class="container">
+
+```
+<h1>🚗 Syntax.AI - AI Video Prompts</h1>
+
+
+<!-- 1 BMW -->
+
+<div class="card">
+
+    <h2>BMW M5 AI Video Prompt</h2>
+
+    <img
+        id="bmwImage"
+        class="car-image"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnJIOrIIp8qZG_d7B9jxVRgDgHiYPUiOP3tdyYsZ6EpXv6ievrkrCGVg&s=10"
+        alt="BMW M5"
+    >
+
+    <button class="download-btn"
+        onclick="downloadImage('bmwImage','BMW-M5.jpg')">
+        ⬇ Download BMW Image
+    </button>
+
+    <div class="label">Master Prompt:</div>
+
+    <div class="prompt" id="bmwPrompt">
+```
+
+Master Prompt:
+Vertical 9:16 aspect ratio, close-up fast-paced 10-second unboxing of an ultra-miniature realistic die-cast BMW M5 car. Hands unlatch a mini metallic shipping container and pull out the miniature BMW M5. Hands peel off the protective satin cover sheet revealing the sharp aggressive dark metallic body of the M5. Hands gently open the driver-side door, press the mini start button inside, and the engine fires up with a crisp, realistic deep exhaust rev sound from the quad tailpipes as the headlights light up. Ultra-photorealistic 4K, macro lens detail, professional studio product lighting, cinematic tech short. </div>
+
+```
+    <button class="copy-btn"
+        onclick="copyPrompt('bmwPrompt',this)">
+        📋 Copy BMW Prompt
+    </button>
+
+</div>
+
+
+<!-- 2 ROLLS ROYCE -->
+
+<div class="card">
+
+    <h2>Rolls-Royce Ghost AI Video Prompt</h2>
+
+    <img
+        id="rollsImage"
+        class="car-image"
+        src="https://www.rolls-roycemotorcars.com/content/dam/rrmc/marketUK/rollsroycemotorcars_com/boutique/replica-model-car-cullinan/component-assets/accessories-product-model-cullinan-carousel-opening-bonnet.jpg"
+        alt="Rolls-Royce Ghost"
+    >
+
+    <button class="download-btn"
+        onclick="downloadImage('rollsImage','Rolls-Royce-Ghost.jpg')">
+        ⬇ Download Rolls-Royce Image
+    </button>
+
+    <div class="label">Master Prompt:</div>
+
+    <div class="prompt" id="rollsPrompt">
+```
+
+Vertical 9:16 aspect ratio, close-up fast-paced 10-second unboxing of an ultra-miniature realistic die-cast Rolls-Royce. Hands unlatch a mini metallic luxury shipping container and pull out the miniature Rolls-Royce. Hands peel off the protective satin cover sheet revealing the iconic sleek dark metallic body, Spirit of Ecstasy ornament, and signature chrome grille. Hands gently open the suicide door, press the mini start button inside, and the smooth powerful luxury engine fires up with a refined deep exhaust rumble as the headlights and illuminated grille light up. Ultra-photorealistic 4K, macro lens detail, professional studio product lighting, cinematic tech short </div>
+
+```
+    <button class="copy-btn"
+        onclick="copyPrompt('rollsPrompt',this)">
+        📋 Copy Rolls-Royce Prompt
+    </button>
+
+</div>
+
+
+<!-- 3 PAGANI -->
+
+<div class="card">
+
+    <h2>Pagani Huayra AI Video Prompt</h2>
+
+    <img
+        id="paganiImage"
+        class="car-image"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaNS_2_ETPHNjgqAkmFjaGxLjwQ0GSJTNJohP7AKGGzy8QxUaA0dbnsKIY&s=10"
+        alt="Pagani Huayra"
+    >
+
+    <button class="download-btn"
+        onclick="downloadImage('paganiImage','Pagani-Huayra.jpg')">
+        ⬇ Download Pagani Image
+    </button>
+
+    <div class="label">Master Prompt:</div>
+
+    <div class="prompt" id="paganiPrompt">
+```
+
+Vertical 9:16 aspect ratio, close-up fast-paced 10-second unboxing of an ultra-miniature realistic die-cast Pagani hypercar. Hands unlatch a mini metallic shipping container and pull out the miniature Pagani. Hands peel off the protective satin cover sheet revealing the sharp aggressive dark metallic carbon-fiber body, iconic quad headlights, and signature quad central exhaust pipes. Hands gently open the gullwing door upwards, press the mini start button inside, and the powerful twin-turbo V12 engine fires up with a loud deep exhaust roar from the quad tailpipes as the headlights light up. Ultra-photorealistic 4K, macro lens detail, professional studio product lighting, dynamic cinematic tech short. </div>
+
+```
+    <button class="copy-btn"
+        onclick="copyPrompt('paganiPrompt',this)">
+        📋 Copy Pagani Prompt
+    </button>
+
+</div>
+
+
+<!-- 4 BUGATTI -->
+
+<div class="card">
+
+    <h2>Bugatti Chiron AI Video Prompt</h2>
+
+    <img
+        id="bugattiImage"
+        class="car-image"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqWVnM_zJuUHXeC-4OH4KOwC8iwNiHAvWzFrq1lLG-71G7rWutuF26ta0&s=10"
+        alt="Bugatti Chiron"
+    >
+
+    <button class="download-btn"
+        onclick="downloadImage('bugattiImage','Bugatti-Chiron.jpg')">
+        ⬇ Download Bugatti Image
+    </button>
+
+    <div class="label">Master Prompt:</div>
+
+    <div class="prompt" id="bugattiPrompt">
+```
+
+Vertical 9:16 aspect ratio, close-up fast-paced 10-second unboxing of an ultra-miniature realistic die-cast Bugatti supercar. Hands unlatch a mini metallic shipping container and pull out the miniature Bugatti. Hands peel off the protective satin cover sheet revealing the sharp aggressive dark metallic body, iconic horseshoe grille, and signature C-line side curve. Hands gently open the driver door, press the mini start button inside, and the powerful quad-turbo W16 engine fires up with a loud deep exhaust roar from the tailpipes as the headlights light up. Ultra-photorealistic 4K, macro lens detail, professional studio product lighting, dynamic cinematic tech short. </div>
+
+```
+    <button class="copy-btn"
+        onclick="copyPrompt('bugattiPrompt',this)">
+        📋 Copy Bugatti Prompt
+    </button>
+
+</div>
+
+
+<!-- 5 LAMBORGHINI -->
+
+<div class="card">
+
+    <h2>Lamborghini Revuelto AI Video Prompt</h2>
+
+    <img
+        id="lamboImage"
+        class="car-image"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuDfVNvtNiMV9Ur-N8451_jfFE6kkkt-vx4CSEE9fIDXkzDXVhXXMZ5P5y&s=10"
+        alt="Lamborghini Revuelto"
+    >
+
+    <button class="download-btn"
+        onclick="downloadImage('lamboImage','Lamborghini-Revuelto.jpg')">
+        ⬇ Download Lamborghini Image
+    </button>
+
+    <div class="label">Master Prompt:</div>
+
+    <div class="prompt" id="lamboPrompt">
+```
+
+Vertical 9:16 aspect ratio, close-up fast-paced 10-second unboxing of an ultra-miniature realistic die-cast Lamborghini. Hands unlatch a mini metallic shipping container and pull out the miniature Lamborghini. Hands peel off the protective satin cover sheet revealing the sharp aggressive dark metallic aerodynamic body, iconic Y-shaped LED headlights, and angular rear styling. Hands gently open the scissor door upwards, press the mini start button inside, and the powerful V12 engine fires up with a loud deep exhaust roar from the tailpipes as the headlights light up. Ultra-photorealistic 4K, macro lens detail, professional studio product lighting, dynamic cinematic tech short. </div>
+
+```
+    <button class="copy-btn"
+        onclick="copyPrompt('lamboPrompt',this)">
+        📋 Copy Lamborghini Prompt
+    </button>
+
+</div>
+
+
+<!-- 6 PORSCHE -->
+
+<div class="card">
+
+    <h2>Porsche 911 AI Video Prompt</h2>
+
+    <img
+        id="porscheImage"
+        class="car-image"
+        src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80"
+        alt="Porsche 911"
+    >
+
+    <button class="download-btn"
+        onclick="downloadImage('porscheImage','Porsche-911.jpg')">
+        ⬇ Download Porsche Image
+    </button>
+
+    <div class="label">Master Prompt:</div>
+
+    <div class="prompt" id="porschePrompt">
+```
+
+Vertical 9:16 aspect ratio, close-up fast-paced 10-second unboxing of an ultra-miniature realistic die-cast Porsche 911. Hands unlatch a mini metallic shipping container and pull out the miniature Porsche 911. Hands peel off the protective satin cover sheet revealing the sharp aggressive dark metallic body, iconic round LED headlights, and signature rear light bar. Hands gently open the driver door, press the mini start button inside, and the powerful twin-turbo flat-six engine fires up with a loud deep exhaust roar from the quad tailpipes as the headlights light up. Ultra-photorealistic 4K, macro lens detail, professional studio product lighting, dynamic cinematic tech short. </div>
+
+```
+    <button class="copy-btn"
+        onclick="copyPrompt('porschePrompt',this)">
+        📋 Copy Porsche Prompt
+    </button>
+
+</div>
+
+
+<!-- 7 NISSAN GTR -->
+
+<div class="card">
+
+    <h2>Nissan GT-R AI Video Prompt</h2>
+
+    <img
+        id="gtrImage"
+        class="car-image"
+        src="https://www.shutterstock.com/image-photo/la-ca-usa-march-17-260nw-2600970865.jpg"
+        alt="Nissan GT-R"
+    >
+
+    <button class="download-btn"
+        onclick="downloadImage('gtrImage','Nissan-GTR.jpg')">
+        ⬇ Download Nissan GT-R Image
+    </button>
+
+    <div class="label">Master Prompt:</div>
+
+    <div class="prompt" id="gtrPrompt">
+```
+
+Vertical 9:16 aspect ratio, close-up fast-paced 10-second unboxing of an ultra-miniature realistic die-cast Dodge SRT. Hands unlatch a mini metallic shipping container and pull out the miniature Dodge SRT. Hands peel off the protective satin cover sheet revealing the sharp aggressive dark metallic muscle car body, iconic front grille, and signature LED tail lights. Hands gently open the driver door, press the mini start button inside, and the powerful supercharged V8 engine fires up with a loud deep exhaust roar from the quad tailpipes as the headlights light up. Ultra-photorealistic 4K, macro lens detail, professional studio product lighting, dynamic cinematic tech short. </div>
+
+```
+    <button class="copy-btn"
+        onclick="copyPrompt('gtrPrompt',this)">
+        📋 Copy Nissan GT-R Prompt
+    </button>
+
+</div>
+
+
+<!-- 8 DODGE -->
+
+<div class="card">
+
+    <h2>Dodge Challenger AI Video Prompt</h2>
+
+    <img
+        id="dodgeImage"
+        class="car-image"
+        src="https://images.unsplash.com/photo-1612813562440-f3f455f77bf7?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZG9kZ2V8ZW58MHx8MHx8fDA%3D"
+        alt="Dodge Challenger"
+    >
+
+    <button class="download-btn"
+        onclick="downloadImage('dodgeImage','Dodge-Challenger.jpg')">
+        ⬇ Download Dodge Image
+    </button>
+
+    <div class="label">Master Prompt:</div>
+
+    <div class="prompt" id="dodgePrompt">
+```
+
+Vertical 9:16 aspect ratio, close-up fast-paced 10-second unboxing of an ultra-miniature realistic die-cast Dodge SRT Hellcat muscle car. Hands unlatch a mini metallic shipping container and pull out the miniature Dodge. Hands peel off the protective satin cover sheet revealing the sharp aggressive dark metallic muscle car body, iconic dual air-intake hood, and signature Hellcat badge. Hands gently open the driver door, press the mini start button inside, and the supercharged V8 engine fires up with a loud deep exhaust roar from the quad tailpipes as the aggressive headlights light up. Ultra-photorealistic 4K, macro lens detail, professional studio product lighting, dynamic cinematic tech short. </div>
+
+```
+    <button class="copy-btn"
+        onclick="copyPrompt('dodgePrompt',this)">
+        📋 Copy Dodge Prompt
+    </button>
+
+</div>
+
+
+<!-- 9 MUSTANG -->
+
+<div class="card">
+
+    <h2>Ford Mustang AI Video Prompt</h2>
+
+    <img
+        id="mustangImage"
+        class="car-image"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdpH6Jr8cc2B_4JNfC2ZBOmbuQ4Zow_7W98-3wg13V2_adCr_RIMqjNYLW&s=10"
+        alt="Ford Mustang"
+    >
+
+    <button class="download-btn"
+        onclick="downloadImage('mustangImage','Ford-Mustang.jpg')">
+        ⬇ Download Mustang Image
+    </button>
+
+    <div class="label">Master Prompt:</div>
+
+    <div class="prompt" id="mustangPrompt">
+```
+
+Vertical 9:16 aspect ratio, close-up fast-paced 10-second unboxing of an ultra-miniature realistic die-cast Ford Mustang GT. Hands unlatch a mini metallic shipping container and pull out the miniature Ford Mustang GT. Hands peel off the protective satin cover sheet revealing the sharp aggressive dark metallic body, iconic pony grille emblem, and signature tri-bar LED tail lights. Hands gently open the driver door, press the mini start button inside, and the powerful V8 engine fires up with a loud deep exhaust roar from the quad tailpipes as the headlights light up. Ultra-photorealistic 4K, macro lens detail, professional studio product lighting, dynamic cinematic tech short. </div>
+```
+    <button class="copy-btn"
+        onclick="copyPrompt('mustangPrompt',this)">
+        📋 Copy Mustang Prompt
+    </button>
+
+</div>
+
+
+<!-- 10 CYBERTRUCK -->
+
+<div class="card">
+
+    <h2>Cybertruck AI Video Prompt</h2>
+
+    <img
+        id="cyberImage"
+        class="car-image"
+        src="https://media.wired.com/photos/5dd828ba9ac14a0008116983/master/pass/Transpo_TeslaStoryOne_Cybertruck-5.jpg"
+        alt="Cybertruck"
+    >
+
+    <button class="download-btn"
+        onclick="downloadImage('cyberImage','Cyber-truck.jpg')">
+        ⬇ Download Cybertruck Image
+    </button>
+
+    <div class="label">Master Prompt:</div>
+
+    <div class="prompt" id="cyberPrompt">
+```
+
+Vertical 9:16 aspect ratio, close-up fast-paced 10-second unboxing of an ultra-miniature realistic die-cast Tesla Cybertruck. Hands unlatch a mini metallic shipping container and pull out the miniature Cybertruck. Hands peel off the protective satin cover sheet revealing the sharp angular stainless-steel exoskeleton body, iconic full-width front LED lightbar, and futuristic sci-fi design. Hands gently open the driver door, press the mini start button inside, and the high-tech electric motor hums to life with a deep futuristic synthetic acceleration sound as the front LED lightbar and red rear lightbar illuminate. Ultra-photorealistic 4K, macro lens detail, professional studio product lighting, dynamic cinematic tech short. </div>
+
+```
+    <button class="copy-btn"
+        onclick="copyPrompt('cyberPrompt',this)">
+        📋 Copy Cybertruck Prompt
+    </button>
+
+</div>
+
+
+<!-- 11 AUDI -->
+
+<div class="card">
+
+    <h2>Audi R8 AI Video Prompt</h2>
+
+    <img
+        id="audiImage"
+        class="car-image"
+        src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1000&q=80"
+        alt="Audi R8"
+    >
+
+    <button class="download-btn"
+        onclick="downloadImage('audiImage','Audi-R8.jpg')">
+        ⬇ Download Audi Image
+    </button>
+
+    <div class="label">Master Prompt:</div>
+
+    <div class="prompt" id="audiPrompt">
+```
+
+Vertical 9:16 aspect ratio, close-up fast-paced 10-second unboxing of an ultra-miniature realistic die-cast Audi RS car. Hands unlatch a mini metallic shipping container and pull out the miniature Audi. Hands peel off the protective satin cover sheet revealing the sharp aggressive dark metallic body, iconic singleframe front grille, Quattro badging, and signature Matrix LED headlights. Hands gently open the driver door, press the mini start button inside, and the powerful twin-turbo V8 engine fires up with a loud deep exhaust roar from the oval tailpipes as the headlights light up. Ultra-photorealistic 4K, macro lens detail, professional studio product lighting, dynamic cinematic tech short. </div>
+
+```
+    <button class="copy-btn"
+        onclick="copyPrompt('audiPrompt',this)">
+        📋 Copy Audi Prompt
+    </button>
+
+</div>
+
+
+<!-- 12 MERCEDES -->
+
+<div class="card">
+
+    <h2>Mercedes-AMG GT AI Video Prompt</h2>
+
+    <img
+        id="mercedesImage"
+        class="car-image"
+        src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80"
+        alt="Mercedes AMG GT"
+    >
+
+    <button class="download-btn"
+        onclick="downloadImage('mercedesImage','Mercedes-AMG-GT.jpg')">
+        ⬇ Download Mercedes Image
+    </button>
+
+    <div class="label">Master Prompt:</div>
+
+    <div class="prompt" id="mercedesPrompt">
+```
+
+Vertical 9:16 aspect ratio, close-up fast-paced 10-second unboxing of an ultra-miniature realistic die-cast Mercedes-AMG GT. Hands unlatch a mini metallic shipping container and pull out the miniature Mercedes-AMG. Hands peel off the protective satin cover sheet revealing the sharp aggressive dark metallic body, iconic Panamericana grille, and signature LED headlights. Hands gently open the driver door, press the mini start button inside, and the powerful twin-turbo V8 engine fires up with a loud deep exhaust roar from the quad tailpipes as the headlights light up. Ultra-photorealistic 4K, macro lens detail, professional studio product lighting, dynamic cinematic tech short. </div>
+```
+    <button class="copy-btn"
+        onclick="copyPrompt('mercedesPrompt',this)">
+        📋 Copy Mercedes Prompt
+    </button>
+
+</div>
+
+
+<!-- 13 FERRARI -->
+
+<div class="card">
+
+    <h2>Ferrari 488 AI Video Prompt</h2>
+
+    <img
+        id="ferrariImage"
+        class="car-image"
+        src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?auto=format&fit=crop&w=1000&q=80"
+        alt="Ferrari 488"
+    >
+
+    <button class="download-btn"
+        onclick="downloadImage('ferrariImage','Ferrari-488.jpg')">
+        ⬇ Download Ferrari Image
+    </button>
+
+    <div class="label">Master Prompt:</div>
+
+    <div class="prompt" id="ferrariPrompt">
+```
+Vertical 9:16 aspect ratio, close-up fast-paced 10-second unboxing of an ultra-miniature realistic die-cast Ferrari supercar. Hands unlatch a mini metallic shipping container and pull out the miniature Ferrari. Hands peel off the protective satin cover sheet revealing the sharp aggressive Rosso Corsa red metallic body, iconic Cavallino Rampante prancing horse badge, and aerodynamic air vents. Hands gently open the driver door, press the mini start button inside, and the high-revving roaring V8 engine fires up with a loud deep exhaust roar from the quad tailpipes as the headlights light up. Ultra-photorealistic 4K, macro lens detail, professional studio product lighting, dynamic cinematic tech short. </div>
+
+```
+    <button class="copy-btn"
+        onclick="copyPrompt('ferrariPrompt',this)">
+        📋 Copy Ferrari Prompt
+    </button>
+
+</div>
+
+
+<!-- 14 MCLAREN -->
+
+<div class="card">
+
+    <h2>McLaren 720S AI Video Prompt</h2>
+
+    <img
+        id="mclarenImage"
+        class="car-image"
+        src="https://images.unsplash.com/photo-1621135802920-133df287f89c?auto=format&fit=crop&w=1000&q=80"
+        alt="McLaren 720S"
+    >
+
+    <button class="download-btn"
+        onclick="downloadImage('mclarenImage','McLaren-720S.jpg')">
+        ⬇ Download McLaren Image
+    </button>
+
+    <div class="label">Master Prompt:</div>
+
+    <div class="prompt" id="mclarenPrompt">
+```
+
+Vertical 9:16 aspect ratio, close-up fast-paced 10-second unboxing of an ultra-miniature realistic die-cast McLaren supercar. Hands unlatch a mini metallic shipping container and pull out the miniature McLaren. Hands peel off the protective satin cover sheet revealing the sharp aggressive dark metallic aerodynamic body and signature dihedral air intakes. Hands gently open the iconic dihedral butterfly door upwards, press the mini start button inside, and the twin-turbo V8 engine fires up with a crisp, realistic deep exhaust rev sound from the central tailpipes as the headlights light up. Ultra-photorealistic 4K, macro lens detail, professional studio product lighting, cinematic tech short. </div>
+
+```
+    <button class="copy-btn"
+        onclick="copyPrompt('mclarenPrompt',this)">
+        📋 Copy McLaren Prompt
+    </button>
+
+</div>
+```
+
+</div>
+
+<script>
+
+    // IMAGE DOWNLOAD
+    async function downloadImage(imageId, fileName) {
+
+        const image = document.getElementById(imageId);
+
+        try {
+
+            const response = await fetch(image.src);
+
+            if (!response.ok) {
+                throw new Error("Download failed");
+            }
+
+            const blob = await response.blob();
+
+            const url = window.URL.createObjectURL(blob);
+
+            const link = document.createElement("a");
+
+            link.href = url;
+            link.download = fileName;
+
+            document.body.appendChild(link);
+
+            link.click();
+
+            document.body.removeChild(link);
+
+            window.URL.revokeObjectURL(url);
+
+        } catch (error) {
+
+            window.open(image.src, "_blank");
+
+            alert(
+                "Image server ne direct download block kiya. Image new tab mein open ho gayi hai."
+            );
+
+        }
+
+    }
+
+
+    // COPY PROMPT
+    async function copyPrompt(promptId, button) {
+
+        const prompt =
+            document.getElementById(promptId).innerText.trim();
+
+        try {
+
+            await navigator.clipboard.writeText(prompt);
+
+            const oldText = button.innerText;
+
+            button.innerText = "✅ Prompt Copied!";
+
+            setTimeout(function() {
+
+                button.innerText = oldText;
+
+            }, 2000);
+
+        } catch (error) {
+
+            alert(
+                "Prompt copy nahi ho saka. Browser clipboard permission check karein."
+            );
+
+        }
+
+    }
+
+</script>
+
+
+
+
+
+</body>
+
+</html>
